@@ -115,8 +115,16 @@ const pauseBtn = document.querySelector('.pause');
 const stopBtn = document.querySelector('.stop');
 const resetBtn = document.querySelector('.reset');
 const historyBtn = document.querySelector('.history');
-const infoBtn = document.querySelector('.info');
+const infoBtn = document.querySelector('.fa-question');
 const closeBtn = document.querySelector('.close');
+
+// ---------------------------COLORS----------------------------
+const colorBtn = document.querySelector('.fa-brush');
+const colorPanel = document.querySelector('.colors');
+const colorOne = document.querySelector('.one');
+const colorTwo = document.querySelector('.two');
+const colorThree = document.querySelector('.three');
+let root = document.documentElement;
 
 // zmienne globalne potrzebne do obliczeń czasu
 
@@ -241,6 +249,8 @@ const closeModal = () => {
 	modalShadow.classList.remove('modal-animation');
 };
 
+// const changeColor = () => {};
+
 // -----------------LISTENERY--------------------------------
 startBtn.addEventListener('click', handleStart);
 pauseBtn.addEventListener('click', handlePause);
@@ -249,3 +259,21 @@ resetBtn.addEventListener('click', handleReset);
 historyBtn.addEventListener('click', handleHistory);
 infoBtn.addEventListener('click', showModal);
 closeBtn.addEventListener('click', closeModal);
+colorBtn.addEventListener('click', () => {
+	colorPanel.classList.toggle('show-colors');
+});
+
+colorOne.addEventListener('click', () => {
+	root.style.setProperty(
+	'--first-color', '#db3c0c');
+});
+
+colorTwo.addEventListener('click', () => {
+	root.style.setProperty(
+	'--first-color', '#42be11');
+});
+
+colorThree.addEventListener('click', () => {
+	root.style.setProperty(
+	'--first-color', '#1279ce')
+});
