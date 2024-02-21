@@ -7,7 +7,7 @@
 :root {
 	--first-color: #db3c0c;
 	--second-color: rgb(190, 210, 197);
-	--hoover-color: rgb(190, 210, 197);
+	--hoover-color: #db3c0c;
 }
 
 body {
