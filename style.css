@@ -159,7 +159,8 @@ button:focus {
 }
 
 .modal .close:hover {
-	background-color: rgb(226, 36, 26);
+	background-color: #111;
+	border: var(--hoover-color);
 }
 
 .modal-animation {
@@ -302,4 +303,24 @@ button:focus {
 .three:hover {
 	background-color: #329bf1;
 	box-shadow: 0 0 16px rgb (250, 20, 6);
+}
+
+@media (max-width: 768px) {
+	.colors {
+		top: 60px;
+		right: -100px;
+		width: 40px;
+		height: 120px;
+	}
+
+	.color {
+		width: 24px;
+		height: 24px;
+		border: 2px solid black;
+	}
+
+	.info i {
+		font-size: 18px;
+		padding: 10px;
+	}
 }

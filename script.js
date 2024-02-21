@@ -152,7 +152,7 @@ const handleStart = () => {
 			seconds = 0;
 			stopWatch.textContent = `${minutes}:00`;
 		}
-	}, 100);
+	}, 1000);
 };
 
 const handlePause = () => {
@@ -264,16 +264,16 @@ colorBtn.addEventListener('click', () => {
 });
 
 colorOne.addEventListener('click', () => {
-	root.style.setProperty(
-	'--first-color', '#db3c0c');
+	root.style.setProperty('--first-color', '#db3c0c');
+	root.style.setProperty('--hoover-color', '#db3c0c');
 });
 
 colorTwo.addEventListener('click', () => {
-	root.style.setProperty(
-	'--first-color', '#42be11');
+	root.style.setProperty('--first-color', '#42be11');
+	root.style.setProperty('--hoover-color', '#42be11');
 });
 
 colorThree.addEventListener('click', () => {
-	root.style.setProperty(
-	'--first-color', '#1279ce')
+	root.style.setProperty('--first-color', '#1279ce');
+	root.style.setProperty('--hoover-color', '#1279ce');
 });
